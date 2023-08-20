@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal';
+}
+nav{
+    width: 100%;
+    height: 70px;
+    background: #092a39;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.connect{
+    padding-top: 20px;
+    padding-left: 2rem;
+}
+.right{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 1rem;
+    top: 1.1rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#connect{
+    padding: 0.4rem;
+    border-radius: 1rem;
+    background: #ffffff;
+}
+#Instagram{
+    padding: 0.4rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+#discord{
+    margin-right: 1rem;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    background: #ffffff;
+}
+.logo{
+    position: absolute;
+    top: 1rem;
+}
+body{
+    animation: bg 10s infinite;
+}
+@keyframes bg {
+    0%{background: linear-gradient(90deg,#07415c,#047fa0,#07415c);background-repeat: no-repeat;background-attachment: fixed;}
+    50%{background: linear-gradient(90deg,#07415c,#047fa0,#07415c);background-repeat: no-repeat;background-attachment: fixed;}
+    100%{    background: linear-gradient(90deg,#07415c,#047fa0,#07415c);background-repeat: no-repeat;background-attachment: fixed;}
+}
+
+.flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:fixed;
+    width: 100%;
+    height:5vh;
+    margin-top: 21.0rem;
+    margin-bottom:-9px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+    bottom: 100px;
+    left: 0;
+  }
+  
+  .content {
+    position:fixed;
+    width: 100%;
+    max-height:92px;
+    bottom: 0;
+    left: 0;
+    height:92px;
+    text-align:center;
+    background-color: white;
+  }
+  .bottom-div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:50px;
+      min-height:40px;
+      width: 100%;
+    }
+    .content {
+      height:12vh;
+      width: 100%;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+.pic{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+span{
+    color: #00ff00;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 10rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+a:hover{
+    padding: 0.6rem;
+}
+.not-whitelisted{
+  color: #ff0000;
+}
+.name{
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  max-width: 100%;
+  height: auto;
+}
+#menu-icon{
+  display: none;
+}
+#menu-icon-x{
+  display: none;
+}
+@media (max-width: 768px) {
+  #menu-icon{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    top: 33px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  #menu-icon-x{
+    position: relative;
+    justify-content: end;
+    top: 33px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .connect{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
+
+}
+
+
+#hide{
+  display: none;
+}
+#responsive-nav{
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  background: #016a72d5;
+  position: absolute;
+}
+.connect2{
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.insta{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.dis{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.diso{
+  margin-left: 1rem;
+}
+.items{
+  margin-top: 10rem;
+}
